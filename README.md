@@ -23,7 +23,7 @@ personal-home-page/
 1. Certifique-se de ter o XAMPP instalado na sua máquina;
 2. Clone este repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/personal-home-page.git
+   git clone https://github.com/matheus-wisniewski/personal-home-page.git
    ```
 3. Navegue até o diretório do projeto:
    ```bash
