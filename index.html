@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            LOGIN
+        </h1>
+    </header>
+
+    <section>
+        <form action="cadastro.php" method="post">
+            <label 
+                for="usuario">
+                Usuário: 
+            </label>
+            <input 
+                type="text" 
+                name="usuario" 
+                id="usuario" 
+                minlength="3" 
+                required
+            >
+
+            <label 
+                for="senha">
+                Senha:
+            </label>
+            <input 
+                type="password" 
+                name="senha"
+                id="senha" 
+                minlength="3" 
+                required
+            >
+
+            <label 
+                for="mostrarSenha">
+                <input type="checkbox" id="mostrarSenha">
+                👁️
+            </label>
+
+            <input 
+                type="submit"
+                value="Enviar"
+            >
+            <input 
+                type="button"
+                value="Esqueci minha senha" 
+                disabled
+            >
+        </form>
+    </section>
+</body>
+
+<script>
+    let inputSenha = document.getElementById("senha");
+    let inputOlho = document.getElementById("mostrarSenha");
+
+    inputOlho.addEventListener('click', function({target}) {
+        target.checked === true ? inputSenha.setAttribute("type", "text") : inputSenha.setAttribute("type", "password");   
+    })
+</script>
+</html>
